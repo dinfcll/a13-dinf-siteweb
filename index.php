@@ -14,7 +14,7 @@ include('header.php');
             <div class="section_w260 float_l margin_r60">
                 <h2>Reseautique</h2>
 
-                <p>Image + courte description</p>
+                <p>Imagesssssss + courte description</p>
 
 
                 <div class="cleaner_h20"></div>
@@ -23,7 +23,7 @@ include('header.php');
 
             <div class="section_w260 float_l margin_r60">
 
-                <h2>Programation</h2>
+                <h2>Programmation</h2>
 
                 <p>Image + Courte description</p>
 
