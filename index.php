@@ -43,10 +43,10 @@
         <div id="templatemo_menu">
             <ul>
                 <li><a href="#" class="current"><span></span>Acceuil</a></li>
-                <li><a href="index.html" target="_parent"><span></span>Index1</a></li>
-                <li><a href="index.html" target="_blank"><span></span>Index2</a></li>
-                <li><a href="index.html" target="_parent"><span></span>Index3</a></li>
-                <li><a href="index.html"><span></span>Index3</a></li>
+                <li><a href="index.php" target="_parent"><span></span>Index1</a></li>
+                <li><a href="index.php" target="_blank"><span></span>Index2</a></li>
+                <li><a href="index.php" target="_parent"><span></span>Index3</a></li>
+                <li><a href="index.php"><span></span>Index3</a></li>
             </ul>
         </div>
         <!-- end of menu -->
