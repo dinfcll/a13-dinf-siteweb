@@ -15,9 +15,11 @@
                 <h3>À propos</h3>
                 </br>
                 <p>
+                    <h5>
                     Le Cégep de Lévis-Lauzon, établissement public d'enseignement supérieur, a pour mission de contribuer
                     au développement de sa région et du Québec par une formation qualifiante, ouverte sur le monde et par
                     des services aux entreprises et aux organisations répondant à leurs besoins.
+                    </h5>
                 </p>
             </TD>
             </TD>
@@ -26,13 +28,13 @@
                     <img alt="Carte" src="http://cll.qc.ca/admin/wp-content/themes/clevislauzon/img/img_pied_carte.jpg" WIDTH="95%" HEIGHT="65%"/>
                 </a></TD>
             <TD WIDTH="30%" HEIGHT="33%">
-                <h4>Adresse</h4>
-                <p>205,&nbsp;route&nbsp;Mgr&nbsp;Bourget,</br>Lévis,&nbsp;(Québec), G6V&nbsp;6Z9</p>
-                <h4>COORDONATEUR </br>Département d'informatique</h4>
-                <p>Stéphane Mercier<BR></p>
+                <h3>Adresse</h3>
+                <h5>205,&nbsp;route&nbsp;Mgr&nbsp;Bourget,</br>Lévis,&nbsp;(Québec), G6V&nbsp;6Z9</h5>
+                <h3>COORDONATEUR </br>Département d'informatique</h3>
+                <h5>Stéphane Mercier</h5>
                 <p><a HREF="mailto:stephane.mercier@cll.qc.ca">stephane.mercier@cll.qc.ca</a></p>
-                <h4>Téléphone</h4>
-                <p>418 833-5110 poste 3826</p>
+                <h3>Téléphone</h3>
+                <h5>418 833-5110 poste 3826</h5>
             </TD>
         </TR>
     </TABLE>
@@ -40,8 +42,7 @@
 
     Conçu par : Étienne Lafond, Etienne Tanguay et Alexandre Gosselin</br>
     Finissants en Techique Informatique - Gestion de Réseaux - Cégep Lévis-Lauzon - Automne 2013</br>
-    Copyright © 2048  <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a> |
-    Validate <a href="http://validator.w3.org/check?uri=referer">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+    Copyright © 2013  <a href="http://www.cll.qc.ca" target="_parent">Cégep Lévis-Lauzon</a>
 
 </div>
 
