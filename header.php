@@ -46,11 +46,11 @@
 
         <div id="templatemo_menu">
             <ul>
-                <li><a href="#" class="current"><span></span>Acceuil</a></li>
-                <li><a href="index.php" target="_parent"><span></span>Réseautique</a></li>
-                <li><a href="index.php" target="_blank"><span></span>Programmation</a></li>
-                <li><a href="index.php" target="_parent"><span></span>Industrielle</a></li>
-                <li><a href="index.php"><span></span>Stages</a></li>
+                <li><a href="index.php" class="current"><span></span>Acceuil</a></li>
+                <li><a href="index.php" target="_parent"><span></span>ATE</a></li>
+                <li><a href="index.php" target="_blank"><span></span>Enseignants</a></li>
+                <li><a href="index.php" target="_parent"><span></span>Stages</a></li>
+                <li><a href="index.php"><span></span>Ici?</a></li>
             </ul>
         </div>
         <!-- end of menu -->
