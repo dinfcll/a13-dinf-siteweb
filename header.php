@@ -28,9 +28,13 @@
 
                 </a></h1>
 
-            <a href="http://fr.photohq.com" title="Cliquez ici pour ouvrir" class="bar_nav" rel="nofollow"
-               target="_blank"><img src="images/nav.png" alt="Cliquez ici pour ouvrir" title="Cliquez ici pour ouvrir"/>Lien
-                vers Facebook, twitter.. a droite de l'ecran</a>
+
+            <a href="http://www.facebook.com/cegeplevislauzon" class="bar_nav" rel="nofollow"
+               target="_blank"><img src="images/facebook-48.png" alt="Fb"/></a>
+
+            <a href="http://www.twitter.com/ComLevisLauzon" class="bar_nav2" rel="nofollow"
+               target="_blank"><img src="images/twitter-48.png" alt="twit"/></a>
+
         </div>
         <!-- end of templatemo_site_title_bar -->
 
