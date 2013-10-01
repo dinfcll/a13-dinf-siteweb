@@ -32,7 +32,7 @@
                 <h5>205,&nbsp;route&nbsp;Mgr&nbsp;Bourget,</br>Lévis,&nbsp;(Québec), G6V&nbsp;6Z9</h5>
                 <h3>COORDONATEUR </br>Département d'informatique</h3>
                 <h5>Stéphane Mercier</h5>
-                <p><a HREF="mailto:stephane.mercier@cll.qc.ca">stephane.mercier@cll.qc.ca</a></p>
+                <h5><a HREF="mailto:stephane.mercier@cll.qc.ca">stephane.mercier@cll.qc.ca</a></h5>
                 <h3>Téléphone</h3>
                 <h5>418 833-5110 poste 3826</h5>
             </TD>
