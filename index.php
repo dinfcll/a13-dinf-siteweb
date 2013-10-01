@@ -14,7 +14,8 @@ include('header.php');
             <div class="section_w260 float_l margin_r60">
                 <h2>Reseautique</h2>
 
-                <p>Imagesssssss + courte description</p>
+                <p>Imagessss + courte description</p>
+
 
 
                 <div class="cleaner_h20"></div>

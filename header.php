@@ -56,7 +56,7 @@
         <!-- end of menu -->
 
         <div id="banner_content">
-            <p>Carousel avec images qui défilent ici</p>
+            <p>Carousel avec image qui défilent ici</p>
 
         </div>
 
