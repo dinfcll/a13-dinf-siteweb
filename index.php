@@ -12,7 +12,7 @@ include('header.php');
         <div class="section_w900">
 
             <div class="section_w260 float_l margin_r60">
-                <h2>Reseautique</h2>
+                <h2>Réseautique</h2>
 
                 <p>Imagessss + courte description</p>
 
@@ -67,17 +67,15 @@ include('header.php');
                 <h2>Dernières Nouvelles</h2>
 
                 <div class="news_box">
-                    <p> Nouvelle 1 wowowowow </p>
+                    <p> Nouvelle 1</p>
 
-                    <p class="post_info">Posted in <a href="#">Templates</a> by <a href="#">Admin</a> on <strong>April
-                        25, 2048</strong></p>
+                    <p class="post_info">Posté par <a href="#">Admin</a> le <strong>1 octobre 2013</strong></p>
                 </div>
 
                 <div class="news_box">
-                    <p> Nouvelle 2 WOWOWOWO</p>
+                    <p> Nouvelle 2</p>
 
-                    <p class="post_info">Posted in <a href="#">Gallery</a> by <a href="#">Admin</a> on <strong>April 22,
-                        2048</strong></p>
+                    <p class="post_info">Posté par <a href="#">Admin</a> le <strong>1 octobre 2013</strong></p>
                 </div>
 
             </div>
