@@ -131,9 +131,9 @@ h5 {
 #templatemo_site_title_bar  #site_title {
     float: left;
     width: 230px;
-    height: 180px;
+    height: 190px;
     padding: 10px 10px 0 10px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     text-align: center;
 }
 
