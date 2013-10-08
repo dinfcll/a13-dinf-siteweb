@@ -128,6 +128,13 @@ h5 {
     top:12px;
 }
 
+.bar_nav3 {
+    position:absolute;
+    cursor:default;
+    left:800px;
+    top:12px;
+}
+
 #templatemo_site_title_bar  #site_title {
     float: left;
     width: 230px;
@@ -252,7 +259,7 @@ h5 {
 }
 
 #templatemo_banner #banner_content {
-    float: right;
+    float: left;
     width: 650px;
 }
 

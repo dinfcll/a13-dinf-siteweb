@@ -21,12 +21,12 @@
     <div id="templatemo_site_title_bar">
 
         <div id="site_title">
-            <h1><a href="http://www.cll.qc.ca" target="_parent">
+            <h1><a href="http://www.cll.qc.ca" target="_parent"></a></h1>
 
-                    <img src="images/bck_logo.png" alt="Site Title"/>
-                    <span>Technique de l'informatique</span>
+                    <h1><img src="images/bck_logo.png" alt="Site Title"/></h1>
+                    <p>Technique de l'informatique</p>
 
-                </a></h1>
+
 
 
             <a href="http://www.facebook.com/cegeplevislauzon" class="bar_nav" rel="nofollow"
@@ -34,6 +34,9 @@
 
             <a href="http://www.twitter.com/ComLevisLauzon" class="bar_nav2" rel="nofollow"
                target="_blank"><img src="images/twitter-48.png" alt="twit"/></a>
+            <form method="post" action="admin.php" class="bar_nav3" rel=nofollow>
+                <input type="submit" name="Submit" value="Login">
+            </form>
 
         </div>
         <!-- end of templatemo_site_title_bar -->
@@ -46,7 +49,7 @@
 
         <div id="templatemo_menu">
             <ul>
-                <li><a href="index.php" class="current"><span></span>Acceuil</a></li>
+                <li><a href="index.php" class="current"><span></span>Accueil</a></li>
                 <li><a href="http://cll.qc.ca/programmes/alternance-travail-etudes/" target="_parent"><span></span>ATE</a></li>
                 <li><a href="index.php" target="_blank"><span></span>Enseignants</a></li>
                 <li><a href="http://www.clevislauzon.qc.ca/informatique/2014_Lettre_stage_H-2014GIR_1.pdf" target="_parent"><span></span>Stages</a></li>
@@ -56,7 +59,7 @@
         <!-- end of menu -->
 
         <div id="banner_content">
-            <p>Carousel avec image qui défilent ici</p>
+            <p><img src="images/reseau.jpg" alt="reseau" height="120%" width="100%"/></p>
 
         </div>
 
