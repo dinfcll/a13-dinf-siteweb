@@ -4,7 +4,6 @@
 <?php
 include('header.php');
 ?>
-
 </head>
 <body>
     <div id="templatemo_content">
@@ -15,7 +14,6 @@ include('header.php');
                 <h2>Réseaux</h2>
 
                 <p>Carousel</p>
-
 
 
                 <div class="cleaner_h20"></div>
