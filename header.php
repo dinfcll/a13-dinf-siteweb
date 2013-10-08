@@ -24,7 +24,7 @@
             <h1><a href="http://www.cll.qc.ca" target="_parent">
 
                     <img src="images/bck_logo.png" alt="Site Title"/>
-                    <span>Département d'informatique</span>
+                    <span>Technique de l'informatique</span>
 
                 </a></h1>
 
@@ -47,10 +47,10 @@
         <div id="templatemo_menu">
             <ul>
                 <li><a href="index.php" class="current"><span></span>Acceuil</a></li>
-                <li><a href="index.php" target="_parent"><span></span>ATE</a></li>
+                <li><a href="http://cll.qc.ca/programmes/alternance-travail-etudes/" target="_parent"><span></span>ATE</a></li>
                 <li><a href="index.php" target="_blank"><span></span>Enseignants</a></li>
-                <li><a href="index.php" target="_parent"><span></span>Stages</a></li>
-                <li><a href="index.php"><span></span>Ici?</a></li>
+                <li><a href="http://www.clevislauzon.qc.ca/informatique/2014_Lettre_stage_H-2014GIR_1.pdf" target="_parent"><span></span>Stages</a></li>
+                <li><a href="http://www.clevislauzon.qc.ca/informatique/PDEA%20Version%20officielle%202010.pdf"><span></span>PDEA</a></li>
             </ul>
         </div>
         <!-- end of menu -->

@@ -12,9 +12,9 @@ include('header.php');
         <div class="section_w900">
 
             <div class="section_w260 float_l margin_r60">
-                <h2>Réseautique</h2>
+                <h2>Réseaux</h2>
 
-                <p>Le gestionnaire de réseau informatique travaille au sein de grandes entreprises qui possèdent leur propre service informatique ou, à titre de consultant, dans de petites et de moyennes entreprises.</p>
+                <p>Carousel</p>
 
 
 
@@ -24,9 +24,9 @@ include('header.php');
 
             <div class="section_w260 float_l margin_r60">
 
-                <h2>Programmation</h2>
+                <h2>Gestion</h2>
 
-                <p>Le programmeur analyste doit répondre aux besoins d'entreprises et aux activités variées. Il peut travailler dans des entreprises qui ont leurs propres services informatiques, qui produisent des logiciels ou qui offrent des services informatiques.</p>
+                <p>Carousel</p>
 
                 <div class="button_01"><a href="http://cll.qc.ca/programmes/techniques/techniques-de-linformatique-informatique-de-gestion-420-aa/">Plus</a></div>
 
@@ -36,7 +36,7 @@ include('header.php');
 
                 <h2>Industrielle</h2>
 
-                <p>Le programmeur spécialisé en informatique industrielle doit répondre aux besoins d'entreprises de production, de transformation, et de sociétés publiques utilisant la haute technologie. Ces personnes doivent faire en sorte que les différents systèmes et applications industrielles puissent communiquer entre eux et ce, en créant des interfaces de communication entre les parties matérielles et logicielles.</p>
+                <p>Carousel</p>
 
                 <div class="button_01"><a href="http://cll.qc.ca/programmes/techniques/techniques-de-linformatique-informatique-industrielle-420-ab/">Plus</a></div>
 
