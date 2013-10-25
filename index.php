@@ -1,9 +1,12 @@
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
 
 <?php
 include('header.php');
 ?>
+
+    <link href="css/glDatePicker.default.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
     <div id="templatemo_content">
@@ -51,12 +54,13 @@ include('header.php');
 
             <div class="section_w260 float_l margin_r60">
 
-                <h2>Calendrier évenements?</h2>
+                <h2>Évenements</h2>
+                <?php
+                include('calendrier.php');
+                ?>
 
-                <p> On pourrait mettre un calendrier avec les activités comme le cosum ect..</p>
 
                 <div class="cleaner_h10"></div>
-                <div class="button_01"><a href="#">Plus</a></div>
 
             </div>
 
@@ -75,6 +79,22 @@ include('header.php');
 
                     <p class="post_info">Posté par <a href="#">Admin</a> le <strong>1 octobre 2013</strong></p>
                 </div>
+                <div class="news_box">
+                    <p> Nouvelle 3</p>
+
+                    <p class="post_info">Posté par <a href="#">Admin</a> le <strong>1 octobre 2013</strong></p>
+                </div>
+                <div class="news_box">
+                    <p> Nouvelle 4</p>
+
+                    <p class="post_info">Posté par <a href="#">Admin</a> le <strong>1 octobre 2013</strong></p>
+                </div>
+                <div class="news_box">
+                    <p> Nouvelle 5</p>
+
+                    <p class="post_info">Posté par <a href="#">Admin</a> le <strong>1 octobre 2013</strong></p>
+                </div>
+
 
             </div>
 
