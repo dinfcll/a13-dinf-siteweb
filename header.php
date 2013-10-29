@@ -24,7 +24,7 @@
             <h1><a href="http://www.cll.qc.ca" target="_parent"></a></h1>
 
                     <h1><img src="images/bck_logo.png" alt="Site Title"/></h1>
-                    <p>Technique de l'informatique</p>
+                    <p style="line-height: 1.1em;font-size: 25px">Techniques de l'informatique</p>
 
 
 
