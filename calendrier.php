@@ -20,8 +20,8 @@
                 selectedDate: null,
                 specialDates: [
                     {
-                        date: new Date(2013, 9, 16),
-                        data: { message: 'cosum a 21h' },
+                        date: new Date(2013, 11, 29),
+                        data: { message: 'Présentation de notre merveilleux site web :)' },
                     },
                     {
                         date: new Date(2013, 9, 23),
