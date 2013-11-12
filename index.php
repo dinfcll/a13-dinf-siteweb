@@ -14,7 +14,7 @@ include('header.php');
         <div class="section_w900">
 
             <div class="section_w260 float_l margin_r60">
-                <h2>Réseaux</h2>
+                <h2 style="text-align: center;">Réseaux</h2>
                 <iframe src="carouselReseaux.php" frameborder="0" scrolling="no"></iframe>
                 <div class="button_01"><a href="http://cll.qc.ca/programmes/techniques/techniques-de-linformatique-gestion-de-reseaux-informatiques-420-ac/">Plus</a></div>
                 <div class="cleaner_h20"></div>
@@ -23,7 +23,7 @@ include('header.php');
 
             <div class="section_w260 float_l margin_r60">
 
-                <h2>Gestion</h2>
+                <h2 style="text-align: center;">Gestion</h2>
                 <iframe src="carouselGestion.php" frameborder="0" scrolling="no"></iframe>
 
                 <div class="button_01"><a href="http://cll.qc.ca/programmes/techniques/techniques-de-linformatique-informatique-de-gestion-420-aa/">Plus</a></div>
@@ -32,7 +32,7 @@ include('header.php');
 
             <div class="section_w260 float_l">
 
-                <h2>Industrielle</h2>
+                <h2 style="text-align: center;">Industrielle</h2>
                 <iframe src="carouselIndu.php" frameborder="0" scrolling="no"></iframe>
 
                 <div class="button_01"><a href="http://cll.qc.ca/programmes/techniques/techniques-de-linformatique-informatique-industrielle-420-ab/">Plus</a></div>

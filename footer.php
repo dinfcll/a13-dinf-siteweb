@@ -7,6 +7,10 @@
         <li><a href="http://cll.moodle.decclic.qc.ca/">Moodle</a></li>
         <li><a href="http://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?ws=6c5a70be-a08b-e011-969d-0030487d8897&vsro=8&JSEnabled=1">MSDNAA</a></li>
         <li class="last_menu"><a href="#">Contact</a></li>
+        <a href="http://www.facebook.com/cegeplevislauzon" rel="nofollow"
+           target="_blank"><img src="images/facebook-48.png" alt="Fb"/></a>
+        <a href="http://www.twitter.com/ComLevisLauzon" rel="nofollow"
+           target="_blank"><img src="images/twitter-48.png" alt="twit"/></a>
     </ul>
 
     <TABLE>
@@ -44,7 +48,9 @@
     Finissants en Techniques Informatique - Gestion de Réseaux - Cégep Lévis-Lauzon - Automne 2013</br>
     Copyright © 2013  <a href="http://www.cll.qc.ca" target="_parent">Cégep Lévis-Lauzon</a>
 
+
 </div>
+
 
 <script type='text/javascript' src='js/logging.js'></script>
 </body>

@@ -24,19 +24,19 @@
             <h1><a href="http://www.cll.qc.ca" target="_parent"></a></h1>
 
                     <h1><img src="images/bck_logo.png" alt="Site Title"/></h1>
-                    <p style="line-height: 1.1em;font-size: 25px">Techniques de l'informatique</p>
+                   <!-- <p style="line-height: 1.1em;font-size: 25px">Techniques de l'informatique</p> -->
 
+        <p class="bar_nav4">Techniques de l'informatique</p>
+       <!-- <p class="bar_nav5">l'informatique</p> -->
 
-
-
-            <a href="http://www.facebook.com/cegeplevislauzon" class="bar_nav" rel="nofollow"
+<!--            <a href="http://www.facebook.com/cegeplevislauzon" class="bar_nav" rel="nofollow"
                target="_blank"><img src="images/facebook-48.png" alt="Fb"/></a>
 
             <a href="http://www.twitter.com/ComLevisLauzon" class="bar_nav2" rel="nofollow"
                target="_blank"><img src="images/twitter-48.png" alt="twit"/></a>
             <form method="post" action="admin.php" class="bar_nav3" rel=nofollow>
                 <input type="submit" name="Submit" value="Login">
-            </form>
+            </form> -->
 
         </div>
         <!-- end of templatemo_site_title_bar -->

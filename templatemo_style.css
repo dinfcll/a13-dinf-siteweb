@@ -55,6 +55,8 @@ img { margin: 0px; padding: 0px; border: none; }
     text-align: center;
     text-decoration: none;
     background: url(images/templatemo_button_01.png) no-repeat;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button_01 a:hover {
@@ -64,10 +66,10 @@ img { margin: 0px; padding: 0px; border: none; }
 h2 {
     margin: 0 0 10px 0;
     padding: 10px 0 15px 0;
-    font-size: 26px;
+    font-size: 34px;
     font-weight: normal;
     color: #96e135;
-    background: url(images/templatemo_title_bg.jpg) bottom left no-repeat;
+    background: url(images/templatemo_title_bg.jpg) bottom right no-repeat;
 }
 
 h3 {
@@ -134,6 +136,27 @@ h5 {
     left:800px;
     top:12px;
 }
+
+.bar_nav4 {
+    position:absolute;
+    cursor:default;
+    left:250px;
+    top:70px;
+    font-size: 40px;
+    color: #96e135;
+    font-weight: normal;
+}
+
+.bar_nav5 {
+    position:absolute;
+    cursor:default;
+    left:489px;
+    top:70px;
+    font-size: 30px;
+    color: #96e135;
+    font-weight: bolder;
+}
+
 
 #templatemo_site_title_bar  #site_title {
     float: left;
@@ -249,7 +272,7 @@ h5 {
     margin-bottom: 5px;
     font-size: 14px;
     text-decoration: none;
-    color: #d4d4d4;
+    color: #96e135;
     font-weight: normal;
     outline: none;
 }
