@@ -32,12 +32,12 @@
             <ul>
                 <li><a href="#">Menu</a>
                     <ul>
-                        <li><a href="https://cll.omnivox.ca/intr/Module/Identification/Login/Login.aspx?ReturnUrl=/intr">Omnivox</a></li>
-                        <li><a href="https://alphonse2.clevislauzon.qc.ca/gw/webacc">Messagerie</a></li>
-                        <li><a href="https://repro.clevislauzon.qc.ca/sysrepro/login/login.asp">Repro+</a></li>
-                        <li><a href="http://cll.qc.ca/admin/wp-content/uploads/2013/02/Calendrier_scolaire_2013-2014-Version_adopt%C3%A9e_Cex_13-02-2013.pdf">Calendrier Scolaire</a></li>
-                        <li><a href="http://cll.qc.ca/repertoire-personnel/     ">Répertoire Du Personnel</a></li>
-                        <li><a href="http://cll.qc.ca/">Site du Cégep</a></li>
+                        <li><a href="https://cll.omnivox.ca/intr/Module/Identification/Login/Login.aspx?ReturnUrl=/intr" target="_new">Omnivox</a></li>
+                        <li><a href="https://alphonse2.clevislauzon.qc.ca/gw/webacc" target="_new">Messagerie</a></li>
+                        <li><a href="https://repro.clevislauzon.qc.ca/sysrepro/login/login.asp" target="_new">Repro+</a></li>
+                        <li><a href="http://cll.qc.ca/admin/wp-content/uploads/2013/02/Calendrier_scolaire_2013-2014-Version_adopt%C3%A9e_Cex_13-02-2013.pdf" target="_new">Calendrier Scolaire</a></li>
+                        <li><a href="http://cll.qc.ca/repertoire-personnel/" target="_new">Répertoire Du Personnel</a></li>
+                        <li><a href="http://cll.qc.ca/" target="_new">Site du Cégep</a></li>
                     </ul>
                 </li>
 
