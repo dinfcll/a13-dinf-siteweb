@@ -17,8 +17,9 @@
 <body style="background-color: #080707;position:absolute;left:-200px">
 <div id="slider">
     <ul>
-        <li><img src="images/activiteprograme.jpg" alt="allo" width="200px" height="200px"/></li>
-        <li><img src="images/msdnaa.jpg" alt="allo" width="200px" height="200px"/></li>
+        <li><img src="images/reseau2.JPG" alt="img" width="200px" height="200px"/></li>
+        <li><img src="images/reseau3.JPG" alt="img" width="200px" height="200px"/></li>
+        <li><img src="images/reseau4.JPG" alt="img" width="200px" height="200px"/></li>
     </ul>
 </div>
 
