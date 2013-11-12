@@ -30,7 +30,7 @@
        <!-- <p class="bar_nav5">l'informatique</p> -->
         <div id="menurapide">
             <ul>
-                <li><a href="#">Menu Rapide</a>
+                <li><a href="#">Menu</a>
                     <ul>
                         <li><a href="https://cll.omnivox.ca/intr/Module/Identification/Login/Login.aspx?ReturnUrl=/intr">Omnivox</a></li>
                         <li><a href="https://alphonse2.clevislauzon.qc.ca/gw/webacc">Messagerie</a></li>
