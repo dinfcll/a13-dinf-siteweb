@@ -28,11 +28,23 @@
 
         <p class="bar_nav4">Techniques de l'informatique</p>
        <!-- <p class="bar_nav5">l'informatique</p> -->
+        <div id="menurapide">
+            <ul>
+                <li><a href="#">Menu Rapide</a>
+                    <ul>
+                        <li><a href="https://cll.omnivox.ca/intr/Module/Identification/Login/Login.aspx?ReturnUrl=/intr">Omnivox</a></li>
+                        <li><a href="https://alphonse2.clevislauzon.qc.ca/gw/webacc">Messagerie</a></li>
+                        <li><a href="https://repro.clevislauzon.qc.ca/sysrepro/login/login.asp">Repro+</a></li>
+                        <li><a href="http://cll.qc.ca/admin/wp-content/uploads/2013/02/Calendrier_scolaire_2013-2014-Version_adopt%C3%A9e_Cex_13-02-2013.pdf">Calendrier Scolaire</a></li>
+                        <li><a href="http://cll.qc.ca/repertoire-personnel/     ">Répertoire Du Personnel</a></li>
+                        <li><a href="http://cll.qc.ca/">Site du Cégep</a></li>
+                    </ul>
+                </li>
 
-<!--            <a href="http://www.facebook.com/cegeplevislauzon" class="bar_nav" rel="nofollow"
-               target="_blank"><img src="images/facebook-48.png" alt="Fb"/></a>
-
-            <a href="http://www.twitter.com/ComLevisLauzon" class="bar_nav2" rel="nofollow"
+            </ul>
+            </a>
+         </div>
+          <!--  <a href="http://www.twitter.com/ComLevisLauzon" class="bar_nav2" rel="nofollow"
                target="_blank"><img src="images/twitter-48.png" alt="twit"/></a>
             <form method="post" action="admin.php" class="bar_nav3" rel=nofollow>
                 <input type="submit" name="Submit" value="Login">
