@@ -19,8 +19,6 @@
     <ul>
         <li><img src="images/prog1.JPG" alt="img" width="200px" height="200px"/></li>
         <li><img src="images/prog2.JPG" alt="img" width="200px" height="200px"/></li>
-        <li><img src="images/prog.jpg" alt="img" width="200px" height="200px"/></li>
-
     </ul>
 </div>
 
