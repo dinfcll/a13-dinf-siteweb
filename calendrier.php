@@ -29,8 +29,9 @@
                     }
                 ],
                 onClick: function(target, cell, date, data) {
+                    var mois = date.getMonth() + 1;
                     target.val(date.getFullYear() + ' - ' +
-                        date.getMonth() + ' - ' +
+                        mois + ' - ' +
                         date.getDate());
 
                     if(data != null) {
