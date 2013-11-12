@@ -20,7 +20,7 @@
                 selectedDate: null,
                 specialDates: [
                     {
-                        date: new Date(2013, 11, 29),
+                        date: new Date(2013, 10, 29),
                         data: { message: 'Présentation de notre merveilleux site web :)' },
                     },
                     {
