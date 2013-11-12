@@ -19,7 +19,7 @@
     <ul>
         <li><img src="images/reseau2.JPG" alt="img" width="200px" height="200px"/></li>
         <li><img src="images/reseau3.JPG" alt="img" width="200px" height="200px"/></li>
-        <li><img src="images/reseau4.JPG" alt="img" width="200px" height="200px"/></li>
+        <li><img src="images/reseau4.jpg" alt="img" width="200px" height="200px"/></li>
     </ul>
 </div>
 
