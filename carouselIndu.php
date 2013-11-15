@@ -15,13 +15,13 @@
     </head>
 
     <body style="background-color: #080707;position:absolute;left:-200px">
-    <div id="slider">
-        <ul>
-            <li><img src="images/indu1.png" alt="img" width="200px" height="200px"/></li>
-            <li><img src="images/indu2.JPG" alt="img" width="200px" height="200px"/></li>
-            <li><img src="images/indu3.JPG" alt="img" width="200px" height="200px"/></li>
-        </ul>
-    </div>
+        <div id="slider">
+            <ul>
+                <li><img src="images/indu1.png" alt="img" width="200px" height="200px"/></li>
+                <li><img src="images/indu2.JPG" alt="img" width="200px" height="200px"/></li>
+                <li><img src="images/indu3.JPG" alt="img" width="200px" height="200px"/></li>
+            </ul>
+        </div>
 
     </body>
 </html>
