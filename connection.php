@@ -23,18 +23,6 @@
 
         <div class="section_w260 float_l margin_r60">
 
-            <?php
-                echo $_SERVER["HTTP_REFERER"];
-//                echo $_Get["Erreur"];
-//
-//                if ($_Get["Erreur"] == 1)
-//                {
-//                    echo 'Erreur !!!';
-//                }
-
-            ?>
-
-
             <form method="post" action="indexadmin.php">
                 <p>Login :</p>
                 <input type="text" name="nom2" size="30">
