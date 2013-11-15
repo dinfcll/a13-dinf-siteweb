@@ -6,6 +6,7 @@
 <body>
 
 //Affichage des événements en cours
+//<textarea maxlength="50" rows="40">asdf</textarea>
 
 //Titre : Activites en cours
 //Cliquez ici pour ajouter un nouvel événement (lien href ; bouton)
