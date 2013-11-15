@@ -23,7 +23,14 @@
 
         <div class="section_w260 float_l margin_r60">
 
-            <form method="post" action="indexadmin.php">
+            <?php
+                if (isset($_GET['Erreur']))
+                {
+                    echo 'Erreur !!';
+                }
+            ?>
+
+            <form method="post" action="connectionverif.php">
                 <p>Login :</p>
                 <input type="text" name="nom2" size="30">
                 <p>Mot de passe :</p>

@@ -34,24 +34,7 @@
                 </div>
 
                 <div class="section_w260 float_l margin_r60">
-
-                    <?php
-                        if($_REQUEST["nom2"]=="admin" && $_REQUEST["pass"]=="admin123")
-                        {
-                            session_start();
-                            echo '<p>Session ouverte</p>';
-//                            echo $_SERVER["HTTP_REFERER"];
-
-                            $_SESSION["Nom"]="Salut";
-
-                        }
-                        else
-                        {
-//                            echo '<p><FONT COLOR= "#FF0000">"Erreur ,pas le droit"</FONT></p>';
-                            header("Location: connection.php");
-                        }
-                    ?>
-
+                    <p>Bonjour</p>
                 </div>
 
                 <div class="section_w260 float_l">
