@@ -1,20 +1,32 @@
-<?php
-/**
- * Created by JetBrains PhpStorm.
- * User: administrateur
- * Date: 13-11-08
- * Time: 16:19
- * To change this template use File | Settings | File Templates.
- */
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page d'administration du formulaire d'activites</title>
+</head>
+<body>
 
 //Affichage des événements en cours
 
 //Titre : Activites en cours
-//Cliquez ici pour ajouter un nouvel événement (lien href)
+//Cliquez ici pour ajouter un nouvel événement (lien href ; bouton)
 
 //Boucle d'affichage des activites (foreach --> exemple sur Moodle)
-//Nom de l'evenement (Evenement::NomEvenement) (Lien cliquable pour le visualiser)
+//Nom de l'evenement (Evenement::NomEvenement)
 //Nom du professeur (Evenement::NomProfesseur)
 //Description resumee (Evenement::DescriptionEvenementResume)
+
+//Bouton Afficher
+<form method="link" action="afficherevenement.php">
+    <input type="submit" value="Afficher l'evenement">
+</form>
 //Bouton Modifier (exemple sur Moodle)
+<form method="link" action="modifierevenement.php">
+    <input type="submit" value="Modifier l'evenement">
+</form>
 //Bouton Supprimer
+<form method="link" action="supprimerevenement.php">
+    <input type="submit" value="Supprimer l'evenement">
+</form>
+
+</body>
+</html>
