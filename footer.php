@@ -19,14 +19,6 @@
                 <h3>À propos</h3>
                 </br>
                 <p><h5><?php echo recupererContenu("Footer", 9)?></h5></p>
-<!--                <p>-->
-<!--                    <h5>-->
-<!--                        Le Cégep de Lévis-Lauzon, établissement public d'enseignement supérieur, a pour mission de contribuer-->
-<!--                        au développement de sa région et du Québec par une formation qualifiante, ouverte sur le monde et par-->
-<!--                        des services aux entreprises et aux organisations répondant à leurs besoins.-->
-<!--                    </h5>-->
-<!--                </p>-->
-            </TD>
             </TD>
             <TD WIDTH="12%" HEIGHT="33%"></TD>
             <TD WIDTH="18%" HEIGHT="33%"><a target="_blank" href="http://maps.google.ca/maps?q=C%C3%A9gep+L%C3%A9vis-Lauzon,+L%C3%A9vis,+QC&hl=fr&ie=UTF8&sll=49.891235,-97.15369&sspn=50.70371,129.550781&oq=C%C3%A9gep+L%C3%A9vi&t=h&hq=C%C3%A9gep+L%C3%A9vis-Lauzon,+L%C3%A9vis,+QC&z=15&iwloc=A">

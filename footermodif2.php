@@ -151,7 +151,7 @@ if(isset($_POST['Insert'])){
         <tr>
             <td>Donnée</td>
             <td>
-                <textarea rows="4" cols="50" class="ckeditor" name="Donnee" id="Donnee"><?php echo $Donnee;?></textarea>
+                <textarea rows="4" cols="50" class="ckeditor" name="Donnee" id="Donnee"><?php echo htmlspecialchars_decode($Donnee);?></textarea>
                 <!--<input type="text" name="repas" size="20" id="repas" value="<?php echo $Titre;?>"/>-->
             </td>
         </tr>
