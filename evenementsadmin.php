@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <?php
+        include('headeradmin.php');
+    ?>
+    <link href="css/glDatePicker.default.css" rel="stylesheet" type="text/css">
     <title>Page d'administration du formulaire d'activites</title>
 </head>
 <body>
 
 //Affichage des événements en cours
-//<textarea maxlength="50" rows="40">asdf</textarea>
+
 
 //Titre : Activites en cours
 //Cliquez ici pour ajouter un nouvel événement (lien href ; bouton)
@@ -17,17 +21,21 @@
 //Description resumee (Evenement::DescriptionEvenementResume)
 
 //Bouton Afficher
-<form method="link" action="afficherevenement.php">
+<form method="link" action="evenementafficher.php">
     <input type="submit" value="Afficher l'evenement">
 </form>
 //Bouton Modifier (exemple sur Moodle)
-<form method="link" action="modifierevenement.php">
+<form method="link" action="evenementmodifier.php">
     <input type="submit" value="Modifier l'evenement">
 </form>
 //Bouton Supprimer
-<form method="link" action="supprimerevenement.php">
+<form method="link" action="evenementsupprimer.php">
     <input type="submit" value="Supprimer l'evenement">
 </form>
+
+<?php
+    include('footer.php');
+?>
 
 </body>
 </html>

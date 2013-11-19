@@ -1,11 +1,13 @@
-<?php
-/**
- * Created by JetBrains PhpStorm.
- * User: administrateur
- * Date: 13-11-08
- * Time: 16:20
- * To change this template use File | Settings | File Templates.
- */
+<!DOCTYPE html>
+<html>
+<head>
+    <?php
+        include('headeradmin.php');
+    ?>
+    <link href="css/glDatePicker.default.css" rel="stylesheet" type="text/css">
+    <title></title>
+</head>
+<body>
 
 //Header : configadmin.php
 
@@ -15,6 +17,14 @@
 //3) Adresse courriel pour l'envoi (Evenement::AdresseCourriel)
 //4) Description breve (Boite a une seule ligne)
 //5) Description detaillee (Boite a plusieurs lignes)
+//<textarea maxlength="50" rows="40">asdf</textarea>
 
 //Bouton "Sauvegarder"
 //Bouton pour revenir a la page d'accueil
+
+<?php
+    include('footer.php');
+?>
+
+</body>
+</html>
