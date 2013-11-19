@@ -12,6 +12,9 @@
     </script>
     <meta name="viewport" content="width=device-width" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <?php
+        include("fonctions.php");
+    ?>
 
 </head>
 <body>
@@ -24,19 +27,26 @@
             <h1><a href="http://www.cll.qc.ca" target="_parent"></a></h1>
 
                     <h1><img src="images/bck_logo.png" alt="Site Title"/></h1>
-                    <p style="line-height: 1.1em;font-size: 25px">Techniques de l'informatique</p>
 
+        <p class="bar_nav4">Techniques de l'informatique</p>
 
+        <div id="menurapide">
+            <ul>
+                <li><a href="#">Menu Rapide</a>
+                    <ul>
+                        <li><a href="<?php echo recupererContenu("Header", 6)?>" target="_new">Omnivox</a></li>
+                        <li><a href="<?php echo recupererContenu("Header", 7)?>" target="_new">Messagerie</a></li>
+                        <li><a href="<?php echo recupererContenu("Header", 8)?>" target="_new">Repro+</a></li>
+                        <li><a href="<?php echo recupererContenu("Header", 9)?>" target="_new">Calendrier Scolaire</a></li>
+                        <li><a href="<?php echo recupererContenu("Header", 10)?>" target="_new">Répertoire Du Personnel</a></li>
+                        <li><a href="<?php echo recupererContenu("Header", 11)?>" target="_new">Site du Cégep</a></li>
+                        <li><a href="<?php echo recupererContenu("Header", 12)?>" target="_new">Admin</a></li>
+                    </ul>
+                </li>
 
-
-            <a href="http://www.facebook.com/cegeplevislauzon" class="bar_nav" rel="nofollow"
-               target="_blank"><img src="images/facebook-48.png" alt="Fb"/></a>
-
-            <a href="http://www.twitter.com/ComLevisLauzon" class="bar_nav2" rel="nofollow"
-               target="_blank"><img src="images/twitter-48.png" alt="twit"/></a>
-            <form method="post" action="admin.php" class="bar_nav3" rel=nofollow>
-                <input type="submit" name="Submit" value="Login">
-            </form>
+            </ul>
+            </a>
+         </div>
 
         </div>
         <!-- end of templatemo_site_title_bar -->
@@ -49,11 +59,11 @@
 
         <div id="templatemo_menu">
             <ul>
-                <li><a href="index.php" class="current"><span></span>Accueil</a></li>
-                <li><a href="http://cll.qc.ca/programmes/alternance-travail-etudes/" target="_parent"><span></span>ATE</a></li>
-                <li><a href="index.php" target="_blank"><span></span>Enseignants</a></li>
-                <li><a href="http://www.clevislauzon.qc.ca/informatique/2014_Lettre_stage_H-2014GIR_1.pdf" target="_parent"><span></span>Stages</a></li>
-                <li><a href="http://www.clevislauzon.qc.ca/informatique/PDEA%20Version%20officielle%202010.pdf"><span></span>PDEA</a></li>
+                <li><a href="<?php echo recupererContenu("Header", 1)?>" class="current"><span></span>Accueil</a></li>
+                <li><a href="<?php echo recupererContenu("Header", 2)?>" target="_parent"><span></span>ATE</a></li>
+                <li><a href="<?php echo recupererContenu("Header", 3)?>" target="_blank"><span></span>Enseignants</a></li>
+                <li><a href="<?php echo recupererContenu("Header", 4)?>" target="_parent"><span></span>Stages</a></li>
+                <li><a href="<?php echo recupererContenu("Header", 5)?>"><span></span>PDEA</a></li>
             </ul>
         </div>
         <!-- end of menu -->

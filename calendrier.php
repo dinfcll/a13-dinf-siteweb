@@ -20,8 +20,8 @@
                 selectedDate: null,
                 specialDates: [
                     {
-                        date: new Date(2013, 9, 16),
-                        data: { message: 'cosum a 21h' },
+                        date: new Date(2013, 10, 29),
+                        data: { message: 'Présentation de notre merveilleux site web :)' },
                     },
                     {
                         date: new Date(2013, 9, 23),
@@ -29,8 +29,9 @@
                     }
                 ],
                 onClick: function(target, cell, date, data) {
+                    var mois = date.getMonth() + 1;
                     target.val(date.getFullYear() + ' - ' +
-                        date.getMonth() + ' - ' +
+                        mois + ' - ' +
                         date.getDate());
 
                     if(data != null) {
