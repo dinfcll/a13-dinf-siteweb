@@ -3,9 +3,10 @@
 <head>
     <?php
         include('headeradmin.php');
+        include('mysqlconnection.php')
     ?>
     <link href="css/glDatePicker.default.css" rel="stylesheet" type="text/css">
-    <title></title>
+    <title>Supprimer un &eacute;v&eacute;nement</title>
 </head>
 <body>
 

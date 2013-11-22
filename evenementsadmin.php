@@ -3,9 +3,10 @@
 <head>
     <?php
         include('headeradmin.php');
+        include('mysqlconnection.php')
     ?>
     <link href="css/glDatePicker.default.css" rel="stylesheet" type="text/css">
-    <title>Page d'administration du formulaire d'activites</title>
+    <title>Page d'administration du formulaire d'activit&eacute;s</title>
 </head>
 <body>
 
