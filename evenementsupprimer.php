@@ -6,11 +6,11 @@
         include('mysqlconnection.php')
     ?>
     <link href="css/glDatePicker.default.css" rel="stylesheet" type="text/css">
-    <title>Supprimer un &eacute;v&eacute;nement</title>
+    <title></title>
 </head>
 <body>
 
-//Header : configadmin.php
+<h1>Supprimer un &eacute;v&eacute;nement</h1><br><br>
 
 //Voulez-vous supprimer l'événement suivant?
 //1) Nom de l'activite (Evenement::NomEvenement)
@@ -18,10 +18,19 @@
 //3) Adresse courriel pour l'envoi (Evenement::AdresseCourriel)
 //4) Description breve (Boite a une seule ligne)
 
+//Bouton Supprimer
+
+
+//Bouton retour à l'accueil
+<form method="link" action="evenementadmin.php">
+    <input type="submit" value="Page admin &Eacute;v&eacute;nement">
+</form>
+
+
+
 <?php
     include('footer.php');
 ?>
 
 </body>
 </html>
-

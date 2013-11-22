@@ -10,7 +10,7 @@
 </head>
 <body>
 
-//Header : configadmin.php
+<h1>Modifier un &eacute;v&eacute;nement</h1><br><br>
 
 //Boucle de recuperation des donnees
 
@@ -26,6 +26,9 @@
 
 //Bouton "Sauvegarder"
 //Bouton pour revenir a la page d'accueil
+<form method="link" action="evenementadmin.php">
+    <input type="submit" value="Page admin &Eacute;v&eacute;nement">
+</form>
 
 <?php
     include('footer.php');

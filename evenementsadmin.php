@@ -10,8 +10,9 @@
 </head>
 <body>
 
-//Affichage des événements en cours
+<h1>Page d'administration du formulaire d'activit&eacute;s</h1><br><br>
 
+//Affichage des événements en cours
 
 //Titre : Activites en cours
 //Cliquez ici pour ajouter un nouvel événement (lien href ; bouton)
@@ -23,15 +24,15 @@
 
 //Bouton Afficher
 <form method="link" action="evenementafficher.php">
-    <input type="submit" value="Afficher l'evenement">
+    <input type="submit" value="Afficher l'&eacute;v&eacute;nement">
 </form>
 //Bouton Modifier (exemple sur Moodle)
 <form method="link" action="evenementmodifier.php">
-    <input type="submit" value="Modifier l'evenement">
+    <input type="submit" value="Modifier l'&eacute;v&eacute;nement">
 </form>
 //Bouton Supprimer
 <form method="link" action="evenementsupprimer.php">
-    <input type="submit" value="Supprimer l'evenement">
+    <input type="submit" value="Supprimer l'&eacute;v&eacute;nement">
 </form>
 
 <?php
