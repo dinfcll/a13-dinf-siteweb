@@ -44,6 +44,8 @@
                 <li><a href="enseignantmodif.php" class="current"><span></span>Modifier Page enseignant</a></li>
                 <li><a href="photovideomodif.php" class="current"><span></span>Modifier photovideo.php</a></li>
                 <li><a href="upload.php" class="current"><span></span>Upload</a></li>
+                <li><a href="nouvellesmodif.php" class="current"><span></span>Ajouter/Modifier une nouvelle</a></li>
+                <li><a href="carousselmodif.php" class="current"><span></span>Modifier les caroussels</a></li>
             </ul>
 
             <div class="cleaner_h20"></div>

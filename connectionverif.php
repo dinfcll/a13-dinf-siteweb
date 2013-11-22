@@ -4,7 +4,6 @@
         session_start();
         $_SESSION["Nom"]="Salut";
         header("Location: indexadmin.php");
-
     }
     else
     {

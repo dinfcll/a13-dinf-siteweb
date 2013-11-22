@@ -53,11 +53,53 @@
 
                 <div class="section_w260 float_l margin_r60">
 
-                    <form method="POST" action="upload2.php" enctype="multipart/form-data">
-                        <!-- On limite le fichier à 100Ko -->
-                        <input type="hidden" name="MAX_FILE_SIZE" value="2000000">
-                        Fichier : <input type="file" name="avatar"></br></br>
-                        <input type="submit" name="envoyer" value="Envoyer le fichier">
+                    <form method="post">
+                        <table border='1' CELLSPACING=0>
+                            <tr bgcolor="#99CCFF">
+                                <th>ID</th>
+                                <th>Titre</th>
+                                <th>Données</th>
+                                <th>Supprimer/Modifier</th>
+                            </tr>
+
+                            <?php
+                            $sql = "SELECT * FROM Header";
+                            $result = mysql_query($sql);
+
+                            if (!$result) {
+                                echo "Impossible d'exécuter la requête ($sql) dans la base : " . mysql_error();
+                                exit;
+                            }
+
+                            while($row = mysql_fetch_assoc($result))
+                            {
+                                ?>
+
+                                <tr>
+                                    <td>
+                                        <?php echo $row["ID"];?>
+                                    </td>
+                                    <td>
+                                        <?php echo $row["Titre"];?>
+                                    </td>
+                                    <td>
+                                        <?php echo $row["Donnee"];?>
+                                    </td>
+                                    <td  align="center">
+                                        <input type="submit" name="Supprimer" value="Supprimer" onclick="return ConfSup(<?php echo $row['ID']?>)"/>
+                                        <?php $lien = "indexmodif2.php?action=modif&ID=".$row["ID"]."&table=".$_GET["table"]?>
+                                        <input type="button" name="Modifier" value="Modifier" onclick="self.location.href='<?php echo $lien?>'"/>
+                                    </td>
+
+                                </tr>
+                            <?php
+                            }
+                            ?>
+
+                        </table>
+                        <input type="hidden" name="Modif" value="0" id="Modif"/>
+                        <br/>
+                        <input type="button" name="Ajouter" value="Ajouter une section" onclick="self.location.href='indexmodif2.php?action=ajout'"/>
                     </form>
 
                 </div>

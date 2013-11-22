@@ -4,7 +4,7 @@ include("headeradmin.php");
 
 if($_GET["action"] == "modif")
 {
-    $sql = "SELECT ID, Titre, Donnee from Footer where ID=".$_GET["ID"];
+    $sql = "SELECT ID, Titre, Donnee from CarousselGestion where ID=".$_GET["ID"];
     $result = mysql_query($sql);
 
     if (!$result) {
@@ -17,7 +17,7 @@ if(isset($_POST['Modifier'])){
     $ID = addslashes($_POST['ID']);
     $Titre = addslashes($_POST['Titre']);
     $Donnee = addslashes($_POST['Donnee']);
-    $sql1 = "update Footer set ID='".$ID."', Titre='".$Titre."', Donnee='".$Donnee."',";
+    $sql1 = "update CarousselGestion set ID='".$ID."', Titre='".$Titre."', Donnee='".$Donnee."'";
     if ($_POST['idp'] != "vide"){
         $sql1 = $sql1.", id_parent=".$_POST['idp'];
     }
@@ -32,7 +32,7 @@ if(isset($_POST['Modifier'])){
     }
     else{
         $result1 = mysql_query("commit");
-        header("Location: footermodif.php");
+        header("Location: carousselmodif.php");
     }
 }
 
@@ -43,10 +43,10 @@ if(isset($_POST['Insert'])){
     $Donnee = addslashes($_POST['Donnee']);
 
     if ($_POST['idp'] != "vide"){
-        $sql1 = "insert into Footer (`ID`, `Titre`, `Donnee`) values ('".$ID."', '".$Titre."', '".$Donnee."')";
+        $sql1 = "insert into CarousselGestion (`ID`, `Titre`, `Donnee`) values ('".$ID."', '".$Titre."', '".$Donnee."')";
     }
     else{
-        $sql1 = "insert into Footer (`ID`, `Titre`, `Donnee`) values ('".$ID."', '".$Titre."', '".$Donnee."')";
+        $sql1 = "insert into CarousselGestion (`ID`, `Titre`, `Donnee`) values ('".$ID."', '".$Titre."', '".$Donnee."')";
     }
     $result1 = mysql_query($sql1);
 
@@ -56,7 +56,7 @@ if(isset($_POST['Insert'])){
     }
     else{
         $result1 = mysql_query("commit");
-        header("Location: footermodif.php");
+        header("Location: carousselmodif.php");
     }
 }
 
@@ -68,6 +68,12 @@ if(isset($_POST['Insert'])){
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Liste des sections</title>
     <script src="ckeditor/ckeditor.js"></script>
+    <script language="javascript">
+        function allo(path)
+        {
+            document.getElementById("image").innerHTML = "<img src=Images/"+path+" width=100% height=100%>";
+        }
+    </script>
 </head>
 <body>
 
@@ -99,79 +105,51 @@ if(isset($_POST['Insert'])){
 
         <div class="section_w260 float_l margin_r60">
 
-<form method="post" action="update.php?table=Footer">
-    <table border='0' CELLSPACING=0>
-        <?php
-        $ID="";
-        $Titre="";
-        $Donnee="";
-        $idp ="";
-
-        if($_GET["action"] == "modif")
-        {
-            if($row = mysql_fetch_assoc($result)){
-                $ID=$row["ID"];
-                $Titre=stripcslashes($row["Titre"]);
-                $Donnee=stripcslashes($row["Donnee"]);
-                $idp = $row["id_parent"];
-            }
-        }
-        ?>
-        <tr>
-            <td>ID</td>
-            <td>
-                <input type="text" name="ID" size="20" id="ID" value="<?php echo $ID;?>" readonly />
-            </td>
-        </tr>
-        <tr>
-            <td>ID parent</td>
-            <td>
-                <?php
-                $sql = "SELECT ID, Titre,Donnee from Footer";
-                $result = mysql_query($sql);
-
-                if (!$result) {
-                    echo "Impossible d'exécuter la requête ($sql) dans la base : " . mysql_error();
-                    exit;
-                }
-                ?>
-
-
-
-                <select name="idp" size="1">
-                    <option value="vide"></option>
+            <form method="post" action="update.php?table=CarousselGestion">
+                <table border='0' CELLSPACING=0>
                     <?php
-                    while($row = mysql_fetch_assoc($result)){
-                        ?>
-                        <option value="<?php echo $row['ID']?>" <?php if($row['ID'] == $idp) echo 'selected'?>><?php echo $row['ID']." - ".$row['Titre']?></option>
-                    <?php
+                    $ID="";
+                    $Titre="";
+                    $Donnee="";
+                    $idp ="";
+
+                    $dirname = 'Images/';
+                    $dir = opendir($dirname);
+
+                    echo 'Choisir l\'image à changer <br><br>';
+                    echo '<select name="Donnee">';
+                    while (($file = readdir($dir)))
+                    {
+                        echo $file;
+
+                        if ($file != "." && $file != "..")
+                        {
+                            echo '<option value="'.$file.'">'.$file.'</option>';
+                        }
+
                     }
+                    echo '</select>';
+
+                    closedir($dir);
                     ?>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td>Donnée</td>
-            <td>
-                <textarea rows="4" cols="50" class="ckeditor" name="Donnee" id="Donnee"><?php echo htmlspecialchars_decode($Donnee);?></textarea>
-                <!--<input type="text" name="repas" size="20" id="repas" value="<?php echo $Titre;?>"/>-->
-            </td>
-        </tr>
 
-    </table>
+                </table>
 
-    <br/>
-    <?php  if(isset($_GET["ID"] ) and $_GET["ID"] != NULL){?>
-        <input type="submit" name="Modifier" value="Mettre à jour"/>
-    <?php  }
-    else{?>
-        <input type="submit" name="Insert" value="Insérer"/>
-    <?php  }?>
+                <br/>
+                <?php  if(isset($_GET["ID"] ) and $_GET["ID"] != NULL){?>
+                    <input type="hidden" name="ID" value="<?php echo $_GET["ID"] ?>">
+                    <input type="submit" name="Modifier" value="Mettre à jour"/>
+                <?php  }
+                else{?>
+                    <input type="submit" name="Insert" value="Insérer"/>
+                <?php  }?>
+
+
 
         </div>
 
         <div class="section_w260 float_l">
-
+            <div id="image"><img src="Images/reseau3.JPG" width=100% height=100%></div>
         </div>
 
         <div class="cleaner"></div>

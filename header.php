@@ -69,7 +69,7 @@
         <!-- end of menu -->
 
         <div id="banner_content">
-            <p><img src="images/reseau.jpg" alt="reseau" height="120%" width="100%"/></p>
+            <p><img src="Images/reseau.jpg" alt="reseau" height="120%" width="100%"/></p>
 
         </div>
 

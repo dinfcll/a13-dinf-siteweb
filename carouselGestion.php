@@ -10,6 +10,7 @@
                 });
             });
         </script>
+        <?php include("fonctions.php"); ?>
 
         <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
@@ -17,8 +18,8 @@
     <body style="background-color: #080707;position:absolute;left:-200px">
         <div id="slider">
             <ul>
-                <li><img src="images/prog1.JPG" alt="img" width="200px" height="200px"/></li>
-                <li><img src="images/prog2.JPG" alt="img" width="200px" height="200px"/></li>
+                <li><img src="Images/<?php echo recupererContenu('CarousselGestion', 1); ?>" alt="img" width="200px" height="200px"/></li>
+                <li><img src="Images/<?php echo recupererContenu('CarousselGestion', 2); ?>" alt="img" width="200px" height="200px"/></li>
             </ul>
         </div>
 
