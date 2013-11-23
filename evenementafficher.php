@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <?php
-        include('headeradmin.php');
-        include('mysqlconnection.php')
-    ?>
-    <link href="css/glDatePicker.default.css" rel="stylesheet" type="text/css">
-    <title>Affichage complet de l'&eacute;v&eacute;nement</title>
-</head>
-<body>
+<?php
+    include('headeradmin.php');
+    include('mysqlconnection.php')
+?>
 <h1>Affichage complet de l'&eacute;v&eacute;nement</h1><br><br>
 
 <!--Afficher un evenement dans la base de donnees-->
@@ -45,6 +38,3 @@
 <?php
     include('footer.php');
 ?>
-
-</body>
-</html>

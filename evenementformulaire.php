@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Formulaire d'inscription aux activit&eacute;s</title>
-</head>
-<body>
 <?php
     include('header.php');
 ?>
@@ -22,5 +16,3 @@ Assurez-vous que vous avez un client email install&eacute; sur votre ordinateur 
 <?php
     include('footer.php');
 ?>
-</body>
-</html>

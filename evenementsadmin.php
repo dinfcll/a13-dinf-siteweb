@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <?php
-        include('headeradmin.php');
-        include('mysqlconnection.php')
-    ?>
-    <link href="css/glDatePicker.default.css" rel="stylesheet" type="text/css">
-    <title>Page d'administration du formulaire d'activit&eacute;s</title>
-</head>
-<body>
+<?php
+    include('headeradmin.php');
+    include('mysqlconnection.php')
+?>
 <h1>Page d'administration du formulaire d'activit&eacute;s</h1><br><br>
-
 
 <!--Cliquez ici pour ajouter un nouvel événement (lien href ; bouton)-->
 <form method="link" action="evenementajouter.php">
@@ -46,6 +38,3 @@
 <?php
     include('footer.php');
 ?>
-
-</body>
-</html>

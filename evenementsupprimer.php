@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <?php
-        include('headeradmin.php');
-        include('mysqlconnection.php')
-    ?>
-    <link href="css/glDatePicker.default.css" rel="stylesheet" type="text/css">
-    <title></title>
-</head>
-<body>
+<?php
+    include('headeradmin.php');
+    include('mysqlconnection.php')
+?>
 <h1>Voulez-vous vraiment supprimer l'&eacute;v&eacute;nement suivant?</h1><br><br>
 
 <!--1) Nom de l'activité (Evenement::NomEvenement)-->
@@ -32,10 +25,6 @@
 <form method="link" action="indexadmin.php">
     <input type="submit" value="Page admin Centrale">
 </form>
-
 <?php
     include('footer.php');
 ?>
-
-</body>
-</html>
