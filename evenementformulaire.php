@@ -16,7 +16,7 @@ Assurez-vous que vous avez un client email install&eacute; sur votre ordinateur 
     Ann&eacute;e d'&eacute;tudes (1,2,3...) : <br><input type="text" name="AnneeProgramme" size="8"><br><br>
     Nom de l'activit&eacute; : <br><input type="text" name="NomActivite" size="30"><br><br>
     Nom du professeur : <br><input type="text" name="NomProfesseur" size="20"><br><br>
-    Renseignements demand&eacute;s : <br><textarea maxlength="50" rows="10"></textarea><br><br>
+    Pr&eacute;cisions additionnelles : <br><input type="text" name="NomProfesseur" size="50"><br><br>
     <input type="submit" value="Cr&eacute;er le courriel pr&ecirc;t à envoyer">
 </form>
 <?php
