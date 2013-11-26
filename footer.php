@@ -7,6 +7,7 @@
         <li><a href="<?php echo recupererContenu("Footer", 4)?>">Moodle</a></li>
         <li><a href="<?php echo recupererContenu("Footer", 5)?>">MSDNAA</a></li>
         <li><a href="<?php echo recupererContenu("Footer", 6)?>">Contact</a></li>
+        <li><a href="<?php echo recupererContenu("Footer", 10)?>">Formulaire</a></li>
         <a href="<?php echo recupererContenu("Footer", 7)?>" rel="nofollow"
            target="_blank"><img src="images/facebook-48.png" alt="Fb"/></a>
         <a href="<?php echo recupererContenu("Footer", 8)?>" rel="nofollow"
