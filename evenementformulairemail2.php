@@ -1,13 +1,3 @@
-<?php
-    $NomEtudiant = $_REQUEST["NomEtudiant"];
-    $ConcentrationProgramme = $_REQUEST["ConcentrationProgramme"];
-    $AnneeProgramme = $_REQUEST["AnneeProgramme"];
-    $NomActivite = $_REQUEST["NomActivite"];
-    $NomProfesseur = $_REQUEST["NomProfesseur"];
-    $PrecisionsAdditionnelles = $_REQUEST["PrecisionsAdditionnelles"];
-?>
-
-
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <?php
@@ -16,6 +6,13 @@
 </head>
 <div id="templatemo_content">
 <?php
+    $NomEtudiant = $_POST["NomEtudiant"];
+    $ConcentrationProgramme = $_POST["ConcentrationProgramme"];
+    $AnneeProgramme = $_POST["AnneeProgramme"];
+    $NomActivite = $_POST["NomActivite"];
+    $NomProfesseur = $_POST["NomProfesseur"];
+    $PrecisionsAdditionnelles = $_POST["PrecisionsAdditionnelles"];
+
     $headers ='From: <'."dinf@cll.qc.ca".'>'."\n";
     $headers .='Reply-To: '."dinf@cll.qc.ca".''."\n";
     $headers .='Content-Type: text/plain; charset="utf-8"'."\n";
@@ -23,26 +20,26 @@
 
     $message = "Nom de l'étudiant : ";
     $message .= $NomEtudiant;
-    $message .= "<br>";
+    $message .= "\n";
     $message .= "Concentration du programme : ";
     $message .= $ConcentrationProgramme;
-    $message .= "<br>";
+    $message .= "\n";
     $message .= "Année du programme : ";
     $message .= $AnneeProgramme;
-    $message .= "<br>";
+    $message .= "\n";
     $message .= "Nom de l'activité : ";
     $message .= $NomActivite;
-    $message .= "<br>";
+    $message .= "\n";
     $message .= "Nom du professeur : ";
     $message .= $NomProfesseur;
-    $message .= "<br>";
+    $message .= "\n";
     $message .= "Précisions additionnelles : ";
     $message .= $PrecisionsAdditionnelles;
-    $message .= "<br>";
+    $message .= "\n";
 
-    if(mail("gosselinalexandre@hotmail.com",'Données du formulaire inscription',$message,$headers))
+    if(mail("bobamers@hotmail.com",'Formulaire Site Web Info',$message,$headers))
     {
-        echo "Le formulaire a ete envoyé avec succès!";
+        echo "Le formulaire a été envoyé avec succès!";
     }
         else
         {
