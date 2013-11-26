@@ -1,0 +1,2 @@
+<?php
+//Fonction INSERT INTO
