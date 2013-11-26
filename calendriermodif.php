@@ -2,8 +2,8 @@
     <head>
 
         <?php
-        include('headeradmin.php');
-        include('mysqlconnection.php')
+            include('headeradmin.php');
+            include('mysqlconnection.php')
         ?>
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -56,14 +56,14 @@
                         <table border='1' CELLSPACING=0>
                             <tr bgcolor="#99CCFF">
                                 <th>ID</th>
-                                <th>Titre</th>
+                                <th>Date</th>
                                 <th>Données</th>
                                 <th>Date de modification</th>
                                 <th>Modifier</th>
                             </tr>
 
                             <?php
-                            $sql = "SELECT * FROM Nouvelles";
+                            $sql = "SELECT * FROM Calendrier";
                             $result = mysql_query($sql);
 
                             if (!$result) {
@@ -80,7 +80,7 @@
                                         <?php echo $row["ID"];?>
                                     </td>
                                     <td>
-                                        <?php echo $row["Titre"];?>
+                                        <?php echo $row["DateEvenement"];?>
                                     </td>
                                     <td>
                                         <?php echo $row["Donnee"];?>
@@ -89,8 +89,8 @@
                                         <?php echo $row["DateModif"];?>
                                     </td>
                                     <td  align="center">
-<!--                                        <input type="submit" name="Supprimer" value="Supprimer" onclick="return ConfSup(--><?php //echo $row['ID']?><!--)"/>-->
-                                        <?php $lien = "nouvellesmodif2.php?action=modif&ID=".$row["ID"]."&table=Nouvelles"?>
+                                        <!--                                        <input type="submit" name="Supprimer" value="Supprimer" onclick="return ConfSup(--><?php //echo $row['ID']?><!--)"/>-->
+                                        <?php $lien = "calendriermodif2.php?action=modif&ID=".$row["ID"]."&table=Calendrier"?>
                                         <input type="button" name="Modifier" value="Modifier" onclick="self.location.href='<?php echo $lien?>'"/>
                                     </td>
 
@@ -102,7 +102,7 @@
                         </table>
                         <input type="hidden" name="Modif" value="0" id="Modif"/>
                         <br/>
-                        <input type="button" name="Ajouter" value="Ajouter une section" onclick="self.location.href='nouvellesmodif2.php?action=ajout'"/>
+                        <input type="button" name="Ajouter" value="Ajouter une section" onclick="self.location.href='calendriermodif2.php?action=ajout'"/>
                     </form>
 
                 </div>

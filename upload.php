@@ -37,15 +37,14 @@
                 <div class="section_w260 float_l margin_r60">
 
                     <ul class="MenuGauche">
+                        <li><a href="indexadmin.php" class="current"><span></span>Page d'accueil admin</a></li>
                         <li><a href="headermodif.php" class="current"><span></span>Modifier Titre</a></li>
                         <li><a href="header2modif.php" class="current"><span></span>Modifier Titre admin</a></li>
-                        <li><a href="footermodif.php" class="current"><span></span>Modifier Pied de page</a></li>
-                        <li><a href="indexmodif.php" class="current"><span></span>Modifier Accueil</a></li>
-                        <li><a href="enseignantmodif.php" class="current"><span></span>Modifier Page enseignant</a></li>
-                        <li><a href="photovideomodif.php" class="current"><span></span>Modifier photovideo.php</a></li>
                         <li><a href="upload.php" class="current"><span></span>Upload</a></li>
-                        <li><a href="nouvellesmodif.php" class="current"><span></span>Ajouter/Modifier une nouvelle</a></li>
                         <li><a href="carousselmodif.php" class="current"><span></span>Modifier les caroussels</a></li>
+                        <li><a href="nouvellesmodif.php" class="current"><span></span>Ajouter/Modifier une nouvelle</a></li>
+                        <li><a href="calendriermodif.php" class="current"><span></span>Modifier le calendrier</a></li>
+                        <li><a href="footermodif.php" class="current"><span></span>Modifier Pied de page</a></li>
                     </ul>
 
                     <div class="cleaner_h20"></div>

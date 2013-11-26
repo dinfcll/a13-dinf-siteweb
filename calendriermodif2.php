@@ -4,7 +4,7 @@
 
     if($_GET["action"] == "modif")
     {
-        $sql = "SELECT ID, Titre, Donnee, DateModif from Nouvelles where ID=".$_GET["ID"];
+        $sql = "SELECT ID, DateEvenement, Donnee, DateModif from Calendrier where ID=".$_GET["ID"];
         $result = mysql_query($sql);
 
         if (!$result) {
@@ -15,10 +15,10 @@
 
     if(isset($_POST['Modifier'])){
         $ID = addslashes($_POST['ID']);
-        $Titre = addslashes($_POST['Titre']);
+        $DateEvenement = addslashes($_POST['DateEvenement']);
         $Donnee = addslashes($_POST['Donnee']);
         $DateModif = addslashes($_POST['DateModif']);
-        $sql1 = "update Nouvelles set ID='".$ID."', Titre='".$Titre."', Donnee='".$Donnee."', DateModif='".$DadeModif."'";
+        $sql1 = "update Calendrier set ID='".$ID."', DateEvenement='".$DateEvenement."', Donnee='".$Donnee."', DateModif='".$DadeModif."'";
         if ($_POST['idp'] != "vide"){
             $sql1 = $sql1.", id_parent=".$_POST['idp'];
         }
@@ -33,22 +33,22 @@
         }
         else{
             $result1 = mysql_query("commit");
-            header("Location: nouvellesmodif.php");
+            header("Location: calendriermodif.php");
         }
     }
 
     if(isset($_POST['Insert'])){
 
         $ID = addslashes($_POST['ID']);
-        $Titre = addslashes($_POST['Titre']);
+        $DateEvenement = addslashes($_POST['DateEvenement']);
         $Donnee = addslashes($_POST['Donnee']);
         $DateModif = addslashes($_POST['DateModif']);
 
         if ($_POST['idp'] != "vide"){
-            $sql1 = "insert into Nouvelles (`ID`, `Titre`, `Donnee`, `DateModif`) values ('".$ID."', '".$Titre."', '".$Donnee."', '".$DateModif."')";
+            $sql1 = "insert into Calendrier (`ID`, `DateEvenement`, `Donnee`, `DateModif`) values ('".$ID."', '".$DateEvenement."', '".$Donnee."', '".$DateModif."')";
         }
         else{
-            $sql1 = "insert into Nouvelles (`ID`, `Titre`, `Donnee`, `DateModif`) values ('".$ID."', '".$Titre."', '".$Donnee."', '".$DateModif."')";
+            $sql1 = "insert into Calendrier (`ID`, `DateEvenement`, `Donnee`, `DateModif`) values ('".$ID."', '".$DateEvenement."', '".$Donnee."', '".$DateModif."')";
         }
         $result1 = mysql_query($sql1);
 
@@ -58,7 +58,7 @@
         }
         else{
             $result1 = mysql_query("commit");
-            header("Location: nouvellesmodif.php");
+            header("Location: calendriermodif.php");
         }
     }
 
@@ -100,16 +100,16 @@
 
                 <div class="section_w260 float_l margin_r60">
                     <?php  if(isset($_GET["ID"] ) and $_GET["ID"] != NULL){?>
-                        <form method="post" action="updatenouvelles.php?table=Nouvelles">
-                    <?php  }
-                     else{?>
-                            <form method="post" action="insert.php?table=Nouvelles">
-                     <?php  }?>
+                    <form method="post" action="updatecalendrier.php?table=Calendrier">
+                        <?php  }
+                        else{?>
+                        <form method="post" action="insertcalendrier.php?table=Calendrier">
+                            <?php  }?>
 
-                        <table border='0' CELLSPACING=0>
-                            <?php
+                            <table border='0' CELLSPACING=0>
+                                <?php
                                 $ID="";
-                                $Titre="";
+                                $DateEvenement="";
                                 $Donnee="";
                                 $DateModif="";
                                 $idp ="";
@@ -118,42 +118,46 @@
                                 {
                                     if($row = mysql_fetch_assoc($result)){
                                         $ID=$row["ID"];
-                                        $Titre=stripcslashes($row["Titre"]);
+                                        $DateEvenement=stripcslashes($row["DateEvenement"]);
                                         $Donnee=stripcslashes($row["Donnee"]);
                                         $DateModif=stripcslashes($row["DateModif"]);
                                         $idp = $row["id_parent"];
                                     }
                                 }
-                            ?>
-                            <tr>
-                                <td>ID</td>
-                                <td>
-                                    <input type="text" name="ID" size="20" id="ID" value="<?php echo $ID;?>" readonly="readonly" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Titre</td>
-                                <td>
-                                    <input type="text" name="Titre" size="20" id="Titre" value="<?php echo $Titre;?>"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Donnée</td>
-                                <td>
-                                    <textarea rows="4" cols="50" class="ckeditor" name="Donnee" id="Donnee"><?php echo htmlspecialchars_decode($Donnee);?></textarea>
-                                    <!--<input type="text" name="repas" size="20" id="repas" value="<?php echo $Titre;?>"/>-->
-                                </td>
-                            </tr>
+                                ?>
+                                <tr>
+                                    <td>ID</td>
+                                    <td>
+                                        <input type="text" name="ID" size="20" id="ID" value="<?php echo $ID;?>" readonly="readonly"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Date</td>
+                                    <td>
+                                        <input type="text" name="DateEvenement" size="20" id="DateEvenement" value="<?php echo $DateEvenement;?>"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Donnée</td>
+                                    <td>
+                                        <textarea rows="4" cols="50" class="ckeditor" name="Donnee" id="Donnee"><?php echo htmlspecialchars_decode($Donnee);?></textarea>
+                                        <!--<input type="text" name="repas" size="20" id="repas" value="<?php echo $Titre;?>"/>-->
+                                    </td>
+                                </tr>
 
-                        </table>
+                                <p>Format de la date: AAAA, MM, JJ</p>
+                                <p>Précision: Mettre un mois de moin pour avoir le bon mois. (ex. Décembre (12) = 11)</p>
+                                <br><br>
 
-                        <br/>
-                        <?php  if(isset($_GET["ID"] ) and $_GET["ID"] != NULL){?>
-                            <input type="submit" name="Modifier" value="Mettre à jour"/>
-                        <?php  }
-                        else{?>
-                            <input type="submit" name="Insert" value="Insérer"/>
-                        <?php  }?>
+                            </table>
+
+                            <br/>
+                            <?php  if(isset($_GET["ID"] ) and $_GET["ID"] != NULL){?>
+                                <input type="submit" name="Modifier" value="Mettre à jour"/>
+                            <?php  }
+                            else{?>
+                                <input type="submit" name="Insert" value="Insérer"/>
+                            <?php  }?>
 
                 </div>
 
@@ -176,7 +180,7 @@
 
 
         <?php
-            include('footer.php');
+        include('footer.php');
         ?>
 
         </form>

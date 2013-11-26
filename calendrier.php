@@ -19,14 +19,24 @@
                 cssName: 'darkneon',
                 selectedDate: null,
                 specialDates: [
-                    {
-                        date: new Date(2013, 10, 29),
-                        data: { message: 'Présentation de notre merveilleux site web :)' },
-                    },
-                    {
-                        date: new Date(2013, 9, 23),
-                        data: { message: 'Happy New Year!' },
-                    }
+                    <?php
+                        $i = 1;
+                        $lignes = "SELECT * from Calendrier";
+                        $result = mysql_query($lignes);
+                        $NbLignes = mysql_num_rows($result);
+
+                        while($i <= $NbLignes)
+                        {
+
+                    ?>
+                        {
+                            date: new Date(<?php echo recupererDate("Calendrier", $i) ?>),
+                            data: { message: '<?php echo recupererContenu("Calendrier", $i) ?>' }
+                        },
+                    <?php
+                            $i++;
+                        }
+                    ?>
                 ],
                 onClick: function(target, cell, date, data) {
                     var mois = date.getMonth() + 1;
