@@ -37,7 +37,7 @@
     </TABLE>
 
 
-    Conçu par : Étienne Lafond et Etienne Tanguay</br>
+    Conçu par : Étienne Lafond, Etienne Tanguay et Alexandre Gosselin</br>
     Finissants en Techniques Informatique - Gestion de Réseaux - Cégep Lévis-Lauzon - Automne 2013</br>
     Copyright © 2013  <a href="http://www.cll.qc.ca" target="_parent">Cégep Lévis-Lauzon</a>
 
